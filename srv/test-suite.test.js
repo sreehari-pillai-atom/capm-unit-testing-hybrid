@@ -5,7 +5,6 @@ const chai = require("chai");
 // chai.use(chaiHttp);
 chai.should();
 
-debugger;
 let service = cds.test("serve",'--profile' ,'hybrid','--resolve-bindings' );
 const { GET, POST , expect , axios } = service; 
 

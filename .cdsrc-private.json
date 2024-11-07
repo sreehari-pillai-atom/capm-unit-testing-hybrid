@@ -1,6 +1,6 @@
 {
   "requires": {
-    "[hybrid]": {
+    "[test]": {
       "destinations": {
         "binding": {
           "type": "cf",

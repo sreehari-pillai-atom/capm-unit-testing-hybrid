@@ -15,6 +15,16 @@
       "skipFiles": [
         "<node_internals>/**"
       ]
+    },
+    {
+      "command": "npm run test",
+      "name": "test",
+      "sourceMaps": true,
+      "request": "launch",
+      "type": "node-terminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }
