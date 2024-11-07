@@ -1,0 +1,37 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@sap-cloud-sdk/http-client": "^3.22.2",
+    "@sap/cds": "^8",
+    "@sap/xssec": "^4",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.7.0",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.2",
+    "chai-subset": "^1.6.0",
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "test": "npx jest --silent=false --detectOpenHandles"
+  },
+  "cds": {
+    "requires": {
+      "auth": "xsuaa",
+      "destinations": true
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  }
+}

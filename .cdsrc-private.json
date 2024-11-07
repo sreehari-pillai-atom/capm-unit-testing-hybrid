@@ -1,0 +1,44 @@
+{
+  "requires": {
+    "[hybrid]": {
+      "destinations": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.eu10-004.hana.ondemand.com",
+          "org": "adev01-dev",
+          "space": "dev",
+          "instance": "unit-test-destination",
+          "key": "unit-test-destination-key",
+          "resolved": false
+        },
+        "kind": "destinations",
+        "vcap": {
+          "name": "destinations"
+        }
+      },
+      "db": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.eu10-004.hana.ondemand.com",
+          "org": "adev01-dev",
+          "space": "dev",
+          "instance": "unit-test-db",
+          "key": "unit-test-db-key",
+          "resolved": false
+        },
+        "kind": "hana-cloud",
+        "vcap": {
+          "name": "db"
+        }
+      },
+      "auth" :{
+        "kind": "mocked",
+        "users": {
+          "sreehari" :{
+            
+          }
+        }
+      }
+    }
+  }
+}
